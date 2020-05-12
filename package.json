@@ -1,0 +1,32 @@
+{
+  "name": "@fuse-open/transpiler",
+  "version": "1.14.0",
+  "description": "JavaScript and TypeScript transpiler powered by Babel.",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.3.4",
+    "@babel/plugin-proposal-class-properties": "^7.3.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/preset-typescript": "^7.3.3",
+    "browserify": "^16.5.1",
+    "uglify-js": "^3.8.1"
+  },
+  "files": [
+    "server.min.js"
+  ],
+  "scripts": {
+    "prepack": "browserify server.js --node | babel --no-babelrc --presets @babel/env | uglifyjs -c -m -o server.min.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fuse-open/transpiler.git"
+  },
+  "author": "Fuse Open",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fuse-open/transpiler/issues"
+  },
+  "homepage": "https://github.com/fuse-open/transpiler#readme"
+}

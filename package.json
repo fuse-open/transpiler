@@ -15,6 +15,9 @@
   "files": [
     "server.min.js"
   ],
+  "bin": {
+    "fusejs-transpiler": "bin/cli.js"
+  },
   "scripts": {
     "prepack": "browserify src/server.js --node | babel --no-babelrc --presets @babel/env | uglifyjs -c -m -o server.min.js",
     "start": "node src/server.js"

@@ -7,6 +7,10 @@ var http = require("http");
 
 function transpile(filename, code) {
     var ext = filename.split('.').pop().toLowerCase();
+    var plugins = [
+        babel_plugin_proposal_class_properties, 
+        babel_plugin_proposal_object_rest_spread
+    ];
     
     if (ext == "ts") {
         return babel.transform(code, {
@@ -15,10 +19,7 @@ function transpile(filename, code) {
                 babel_preset_typescript,
                 babel_preset_env
             ],
-            plugins: [
-                babel_plugin_proposal_class_properties, 
-                babel_plugin_proposal_object_rest_spread
-            ],
+            plugins: plugins,
             sourceMaps: "inline"
         });
     } else {
@@ -27,6 +28,7 @@ function transpile(filename, code) {
             presets: [
                 babel_preset_env
             ],
+            plugins: plugins,
             sourceMaps: "inline"
         });
     }

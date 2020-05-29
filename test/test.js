@@ -20,7 +20,7 @@ function transpile(port, file) {
 }
 
 function runTests(port) {
-    let retval = 0;
+    let failed = 0;
 
     for (file of fs.readdirSync(__dirname)) {
         switch (file.split('.').pop()) {
@@ -34,11 +34,16 @@ function runTests(port) {
         console.log(file);
         const status = transpile(port, file);
 
-        if (retval == 0 && status != 0)
-            retval = status;
+        if (status != 0)
+            failed++;
     }
 
-    return retval;
+    if (!failed)
+        console.log(`\nall tests passed`);
+    else
+        console.log(`\n${failed} tests failed`);
+
+    return failed;
 }
 
 // Start transpiler server.

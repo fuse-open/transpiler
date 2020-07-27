@@ -16,6 +16,7 @@ function transpile(port, file) {
     if (stderr.length)
         console.error(stderr);
 
+    fs.writeFileSync(path.join(__dirname, file) + ".g.js", String(client.stdout));
     return client.status;
 }
 
@@ -23,6 +24,9 @@ function runTests(port) {
     let failed = 0;
 
     for (file of fs.readdirSync(__dirname)) {
+        if (file.endsWith('.g.js'))
+            continue;
+
         switch (file.split('.').pop()) {
             case "ts":
             case "js":

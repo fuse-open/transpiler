@@ -4,11 +4,15 @@ var babel_preset_typescript = require("@babel/preset-typescript");
 var babel_plugin_proposal_decorators = require("@babel/plugin-proposal-decorators");
 var babel_plugin_proposal_class_properties = require("@babel/plugin-proposal-class-properties");
 var babel_plugin_proposal_object_rest_spread = require("@babel/plugin-proposal-object-rest-spread");
+var babel_plugin_transform_typescript_metadata = require('babel-plugin-transform-typescript-metadata');
 var http = require("http");
 
 function transpile(filename, code) {
     var ext = filename.split('.').pop().toLowerCase();
     var plugins = [
+        // NB: plugin-transform-typescript-metadata must go before
+        //     plugin-proposal-decorators!
+        babel_plugin_transform_typescript_metadata,
         // NB: plugin-proposal-decorators must go before
         //     plugin-proposal-class-properties!
         [

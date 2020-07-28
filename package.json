@@ -1,6 +1,6 @@
 {
   "name": "@fuse-open/transpiler",
-  "version": "1.15.0",
+  "version": "1.16.0",
   "description": "JavaScript and TypeScript transpiler powered by Babel.",
   "devDependencies": {
     "@babel/cli": "^7.10.1",

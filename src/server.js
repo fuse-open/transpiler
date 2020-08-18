@@ -1,7 +1,3 @@
-// NB: regeneratorRuntime must be defined globally!
-//     https://github.com/babel/babel/issues/9849
-require("regenerator-runtime/runtime");
-
 var babel = require("@babel/core");
 var babel_preset_env = require("@babel/preset-env");
 var babel_preset_typescript = require("@babel/preset-typescript");

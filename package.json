@@ -3,16 +3,16 @@
   "version": "1.16.0",
   "description": "JavaScript and TypeScript transpiler powered by Babel.",
   "devDependencies": {
-    "@babel/cli": "^7.10.1",
-    "@babel/core": "^7.10.1",
-    "@babel/plugin-proposal-class-properties": "^7.10.1",
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.3.4",
+    "@babel/plugin-proposal-class-properties": "^7.3.4",
     "@babel/plugin-proposal-decorators": "^7.10.1",
-    "@babel/plugin-proposal-object-rest-spread": "^7.10.1",
-    "@babel/preset-env": "^7.10.1",
-    "@babel/preset-typescript": "^7.10.1",
+    "@babel/plugin-proposal-object-rest-spread": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/preset-typescript": "^7.3.3",
     "babel-plugin-transform-typescript-metadata": "^0.3.0",
     "browserify": "^16.5.1",
-    "uglify-js": "^3.9.4"
+    "uglify-js": "^3.8.1"
   },
   "files": [
     "server.min.js"

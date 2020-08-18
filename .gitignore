@@ -1,4 +1,3 @@
 node_modules/
-*.g.js
 *.min.js
 *.tgz

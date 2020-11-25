@@ -4,6 +4,7 @@ var babel_preset_typescript = require("@babel/preset-typescript");
 var babel_plugin_proposal_decorators = require("@babel/plugin-proposal-decorators");
 var babel_plugin_proposal_class_properties = require("@babel/plugin-proposal-class-properties");
 var babel_plugin_proposal_object_rest_spread = require("@babel/plugin-proposal-object-rest-spread");
+var babel_plugin_proposal_optional_chaining = require("@babel/plugin-proposal-optional-chaining");
 var babel_plugin_transform_typescript_metadata = require('babel-plugin-transform-typescript-metadata');
 var http = require("http");
 
@@ -19,10 +20,11 @@ function transpile(filename, code) {
             babel_plugin_proposal_decorators, {
             decoratorsBeforeExport: true
         }],
-        babel_plugin_proposal_class_properties, 
-        babel_plugin_proposal_object_rest_spread
+        babel_plugin_proposal_class_properties,
+        babel_plugin_proposal_object_rest_spread,
+        babel_plugin_proposal_optional_chaining
     ];
-    
+
     if (ext == "ts") {
         return babel.transform(code, {
             filename: filename,

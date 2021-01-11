@@ -3,17 +3,17 @@
   "version": "1.17.0",
   "description": "JavaScript and TypeScript transpiler powered by Babel.",
   "devDependencies": {
-    "@babel/cli": "^7.8.4",
-    "@babel/core": "^7.3.4",
-    "@babel/plugin-proposal-class-properties": "^7.3.4",
-    "@babel/plugin-proposal-decorators": "^7.10.1",
-    "@babel/plugin-proposal-object-rest-spread": "^7.3.4",
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/plugin-proposal-decorators": "^7.12.12",
+    "@babel/plugin-proposal-object-rest-spread": "^7.12.1",
     "@babel/plugin-proposal-optional-chaining": "^7.12.7",
-    "@babel/preset-env": "^7.3.4",
-    "@babel/preset-typescript": "^7.3.3",
-    "babel-plugin-transform-typescript-metadata": "^0.3.0",
-    "browserify": "^16.5.1",
-    "uglify-js": "^3.8.1"
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-typescript": "^7.12.7",
+    "babel-plugin-transform-typescript-metadata": "^0.3.1",
+    "browserify": "^16.5.2",
+    "uglify-js": "^3.12.4"
   },
   "files": [
     "server.min.js"

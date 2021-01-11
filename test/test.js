@@ -52,7 +52,9 @@ function runTests(port) {
 
 // Start transpiler server.
 const server = spawn("node", [
-    path.join(__dirname, "..", "src", "server.js")
+    process.argv.length > 2
+        ? process.argv[2]
+        : path.join(__dirname, "..", "src", "server.js")
 ]);
 
 server.stdout.on('data', data => {

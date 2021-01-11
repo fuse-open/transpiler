@@ -24,7 +24,8 @@
   "scripts": {
     "prepack": "browserify src/server.js --node | babel --no-babelrc --presets @babel/env | uglifyjs -c -m -o server.min.js",
     "start": "node src/server.js",
-    "test": "node test/test.js"
+    "test": "node test/test.js",
+    "test-min": "node test/test.js server.min.js"
   },
   "repository": {
     "type": "git",

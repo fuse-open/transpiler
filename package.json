@@ -11,9 +11,9 @@
     "@babel/plugin-proposal-optional-chaining": "^7.12.7",
     "@babel/preset-env": "^7.3.4",
     "@babel/preset-typescript": "^7.3.3",
-    "babel-plugin-transform-typescript-metadata": "^0.3.0",
-    "browserify": "^16.5.1",
-    "uglify-js": "^3.8.1"
+    "babel-plugin-transform-typescript-metadata": "^0.3.1",
+    "browserify": "^16.5.2",
+    "uglify-js": "^3.12.4"
   },
   "files": [
     "server.min.js"

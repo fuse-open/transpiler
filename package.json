@@ -36,5 +36,6 @@
   "bugs": {
     "url": "https://github.com/fuse-open/transpiler/issues"
   },
-  "homepage": "https://github.com/fuse-open/transpiler#readme"
+  "homepage": "https://github.com/fuse-open/transpiler#readme",
+  "dependencies": {}
 }

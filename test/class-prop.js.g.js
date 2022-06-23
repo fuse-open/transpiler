@@ -9,4 +9,4 @@ var Foo = function Foo() {
 
   _defineProperty(this, "bar", 1);
 };
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNsYXNzLXByb3AuanMiXSwibmFtZXMiOlsiRm9vIl0sIm1hcHBpbmdzIjoiOzs7Ozs7SUFBTUEsRzs7OytCQUNJLEMiLCJzb3VyY2VzQ29udGVudCI6WyJjbGFzcyBGb28ge1xyXG4gICAgYmFyID0gMVxyXG59XHJcbiJdfQ==
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNsYXNzLXByb3AuanMiXSwibmFtZXMiOlsiRm9vIl0sIm1hcHBpbmdzIjoiOzs7Ozs7SUFBTUEsRzs7OytCQUNJLEMiLCJzb3VyY2VzQ29udGVudCI6WyJjbGFzcyBGb28ge1xuICAgIGJhciA9IDFcbn1cbiJdfQ==

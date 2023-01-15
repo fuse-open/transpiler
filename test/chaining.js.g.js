@@ -1,8 +1,8 @@
 "use strict";
 
 var _obj$foo, _obj$foo$bar, _obj$qux, _obj$foo$bar2, _obj$foo2, _obj$foo2$bar;
-
 // https://babeljs.io/docs/en/babel-plugin-proposal-optional-chaining
+
 const obj = {
   foo: {
     bar: {
@@ -13,11 +13,11 @@ const obj = {
 const baz = obj === null || obj === void 0 ? void 0 : (_obj$foo = obj.foo) === null || _obj$foo === void 0 ? void 0 : (_obj$foo$bar = _obj$foo.bar) === null || _obj$foo$bar === void 0 ? void 0 : _obj$foo$bar.baz; // 42
 
 const safe = obj === null || obj === void 0 ? void 0 : (_obj$qux = obj.qux) === null || _obj$qux === void 0 ? void 0 : _obj$qux.baz; // undefined
-// Optional chaining and normal chaining can be intermixed
 
+// Optional chaining and normal chaining can be intermixed
 obj === null || obj === void 0 ? void 0 : (_obj$foo$bar2 = obj.foo.bar) === null || _obj$foo$bar2 === void 0 ? void 0 : _obj$foo$bar2.baz; // Only access `foo` if `obj` exists, and `baz` if
 // `bar` exists
-// Example usage with bracket notation:
 
+// Example usage with bracket notation:
 obj === null || obj === void 0 ? void 0 : (_obj$foo2 = obj['foo']) === null || _obj$foo2 === void 0 ? void 0 : (_obj$foo2$bar = _obj$foo2.bar) === null || _obj$foo2$bar === void 0 ? void 0 : _obj$foo2$bar.baz; // 42
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNoYWluaW5nLmpzIl0sIm5hbWVzIjpbIm9iaiIsImZvbyIsImJhciIsImJheiIsInNhZmUiLCJxdXgiXSwibWFwcGluZ3MiOiI7Ozs7QUFBQTtBQUVBLE1BQU1BLEdBQUcsR0FBRztBQUNSQyxFQUFBQSxHQUFHLEVBQUU7QUFDREMsSUFBQUEsR0FBRyxFQUFFO0FBQ0RDLE1BQUFBLEdBQUcsRUFBRTtBQURKO0FBREo7QUFERyxDQUFaO0FBUUEsTUFBTUEsR0FBRyxHQUFHSCxHQUFILGFBQUdBLEdBQUgsbUNBQUdBLEdBQUcsQ0FBRUMsR0FBUiw2REFBRyxTQUFVQyxHQUFiLGlEQUFHLGFBQWVDLEdBQTNCLEMsQ0FBZ0M7O0FBRWhDLE1BQU1DLElBQUksR0FBR0osR0FBSCxhQUFHQSxHQUFILG1DQUFHQSxHQUFHLENBQUVLLEdBQVIsNkNBQUcsU0FBVUYsR0FBdkIsQyxDQUE0QjtBQUU1Qjs7QUFDQUgsR0FBRyxTQUFILElBQUFBLEdBQUcsV0FBSCw2QkFBQUEsR0FBRyxDQUFFQyxHQUFMLENBQVNDLEdBQVQsZ0VBQWNDLEdBQWQsQyxDQUFtQjtBQUNuQjtBQUVBOztBQUNBSCxHQUFHLFNBQUgsSUFBQUEsR0FBRyxXQUFILHlCQUFBQSxHQUFHLENBQUcsS0FBSCxDQUFILHlFQUFjRSxHQUFkLGdFQUFtQkMsR0FBbkIsQyxDQUF1QiIsInNvdXJjZXNDb250ZW50IjpbIi8vIGh0dHBzOi8vYmFiZWxqcy5pby9kb2NzL2VuL2JhYmVsLXBsdWdpbi1wcm9wb3NhbC1vcHRpb25hbC1jaGFpbmluZ1xuXG5jb25zdCBvYmogPSB7XG4gICAgZm9vOiB7XG4gICAgICAgIGJhcjoge1xuICAgICAgICAgICAgYmF6OiA0MixcbiAgICAgICAgfSxcbiAgICB9LFxufTtcblxuY29uc3QgYmF6ID0gb2JqPy5mb28/LmJhcj8uYmF6OyAvLyA0MlxuXG5jb25zdCBzYWZlID0gb2JqPy5xdXg/LmJhejsgLy8gdW5kZWZpbmVkXG5cbi8vIE9wdGlvbmFsIGNoYWluaW5nIGFuZCBub3JtYWwgY2hhaW5pbmcgY2FuIGJlIGludGVybWl4ZWRcbm9iaj8uZm9vLmJhcj8uYmF6OyAvLyBPbmx5IGFjY2VzcyBgZm9vYCBpZiBgb2JqYCBleGlzdHMsIGFuZCBgYmF6YCBpZlxuLy8gYGJhcmAgZXhpc3RzXG5cbi8vIEV4YW1wbGUgdXNhZ2Ugd2l0aCBicmFja2V0IG5vdGF0aW9uOlxub2JqPy5bJ2ZvbyddPy5iYXI/LmJheiAvLyA0MlxuIl19
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJvYmoiLCJmb28iLCJiYXIiLCJiYXoiLCJzYWZlIiwicXV4Il0sInNvdXJjZXMiOlsiY2hhaW5pbmcuanMiXSwic291cmNlc0NvbnRlbnQiOlsiLy8gaHR0cHM6Ly9iYWJlbGpzLmlvL2RvY3MvZW4vYmFiZWwtcGx1Z2luLXByb3Bvc2FsLW9wdGlvbmFsLWNoYWluaW5nXG5cbmNvbnN0IG9iaiA9IHtcbiAgICBmb286IHtcbiAgICAgICAgYmFyOiB7XG4gICAgICAgICAgICBiYXo6IDQyLFxuICAgICAgICB9LFxuICAgIH0sXG59O1xuXG5jb25zdCBiYXogPSBvYmo/LmZvbz8uYmFyPy5iYXo7IC8vIDQyXG5cbmNvbnN0IHNhZmUgPSBvYmo/LnF1eD8uYmF6OyAvLyB1bmRlZmluZWRcblxuLy8gT3B0aW9uYWwgY2hhaW5pbmcgYW5kIG5vcm1hbCBjaGFpbmluZyBjYW4gYmUgaW50ZXJtaXhlZFxub2JqPy5mb28uYmFyPy5iYXo7IC8vIE9ubHkgYWNjZXNzIGBmb29gIGlmIGBvYmpgIGV4aXN0cywgYW5kIGBiYXpgIGlmXG4vLyBgYmFyYCBleGlzdHNcblxuLy8gRXhhbXBsZSB1c2FnZSB3aXRoIGJyYWNrZXQgbm90YXRpb246XG5vYmo/LlsnZm9vJ10/LmJhcj8uYmF6IC8vIDQyXG4iXSwibWFwcGluZ3MiOiI7OztBQUFBOztBQUVBLE1BQU1BLEdBQUcsR0FBRztFQUNSQyxHQUFHLEVBQUU7SUFDREMsR0FBRyxFQUFFO01BQ0RDLEdBQUcsRUFBRTtJQUNUO0VBQ0o7QUFDSixDQUFDO0FBRUQsTUFBTUEsR0FBRyxHQUFHSCxHQUFHLGFBQUhBLEdBQUcsbUNBQUhBLEdBQUcsQ0FBRUMsR0FBRyw2REFBUixTQUFVQyxHQUFHLGlEQUFiLGFBQWVDLEdBQUcsQ0FBQyxDQUFDOztBQUVoQyxNQUFNQyxJQUFJLEdBQUdKLEdBQUcsYUFBSEEsR0FBRyxtQ0FBSEEsR0FBRyxDQUFFSyxHQUFHLDZDQUFSLFNBQVVGLEdBQUcsQ0FBQyxDQUFDOztBQUU1QjtBQUNBSCxHQUFHLGFBQUhBLEdBQUcsd0NBQUhBLEdBQUcsQ0FBRUMsR0FBRyxDQUFDQyxHQUFHLGtEQUFaLGNBQWNDLEdBQUcsQ0FBQyxDQUFDO0FBQ25COztBQUVBO0FBQ0FILEdBQUcsYUFBSEEsR0FBRyxvQ0FBSEEsR0FBRyxDQUFHLEtBQUssQ0FBQywrREFBWixVQUFjRSxHQUFHLGtEQUFqQixjQUFtQkMsR0FBRyxFQUFDIn0=

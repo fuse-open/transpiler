@@ -1,2 +1,2 @@
 #!/usr/bin/env node
-require("../server.min.js");
+require("../server.min.js")

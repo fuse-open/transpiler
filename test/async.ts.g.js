@@ -1,0 +1,7 @@
+"use strict";
+
+async function haha() {}
+async function hoho() {
+  await haha();
+}
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJoYWhhIiwiaG9obyJdLCJzb3VyY2VzIjpbImFzeW5jLnRzIl0sInNvdXJjZXNDb250ZW50IjpbImFzeW5jIGZ1bmN0aW9uIGhhaGEoKSB7XG59XG5cbmFzeW5jIGZ1bmN0aW9uIGhvaG8oKSB7XG4gICAgYXdhaXQgaGFoYSgpXG59XG4iXSwibWFwcGluZ3MiOiI7O0FBQUEsZUFBZUEsSUFBSSxHQUFHLENBQ3RCO0FBRUEsZUFBZUMsSUFBSSxHQUFHO0VBQ2xCLE1BQU1ELElBQUksRUFBRTtBQUNoQiJ9

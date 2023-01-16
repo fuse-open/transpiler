@@ -24,13 +24,21 @@ function transpile(filename, code) {
         babel_plugin_proposal_object_rest_spread,
         babel_plugin_proposal_optional_chaining
     ]
+    const target = [
+        babel_preset_env,
+        {
+            "targets": {
+                "node": "8"
+            }
+        }
+    ]
 
     if (ext == "ts") {
         return babel.transform(code, {
             filename: filename,
             presets: [
                 babel_preset_typescript,
-                babel_preset_env
+                target
             ],
             plugins: plugins,
             sourceMaps: "inline"
@@ -39,7 +47,7 @@ function transpile(filename, code) {
         return babel.transform(code, {
             filename: filename,
             presets: [
-                babel_preset_env
+                target
             ],
             plugins: plugins,
             sourceMaps: "inline"

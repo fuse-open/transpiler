@@ -9,7 +9,7 @@ const babel_plugin_transform_typescript_metadata = require("babel-plugin-transfo
 const http = require("http")
 
 function transpile(filename, code) {
-    const ext = filename.split('.').pop().toLowerCase()
+    const ext = filename.split(".").pop().toLowerCase()
     const plugins = [
         // NB: plugin-transform-typescript-metadata must go before
         //     plugin-proposal-decorators!

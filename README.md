@@ -17,7 +17,3 @@ $ fusejs-transpiler
 
 port:49250
 ```
-
-## History
-
-This package was extracted from [uno@1.15.0-canary.4](https://github.com/fuse-open/uno/tree/v1.15.0-canary.4) (including Git history).
